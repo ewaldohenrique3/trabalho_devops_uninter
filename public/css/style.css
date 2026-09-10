@@ -119,3 +119,54 @@ img:hover {
     background-color: black;
     box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.753);
 }
+
+/* --- Sua Parte: Cards e layout da página de integrantes --- */
+.container {
+    font-family: "Caramel", cursive;
+    font-size: 1.5em;
+    display: inline-flex;
+    width: 97%;
+    height: 50vh;
+    margin: 50px auto;
+    justify-content: center;
+    padding: 13px;
+}
+
+.container p {
+    margin: 15px;
+}
+
+.container a {
+    padding: 2px;
+}
+
+.integrantes {
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    height: 500px;
+    margin: auto 20px;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.575);
+    border-radius: 10px;
+    background-color: #2525257c;
+    padding: 20px;
+}
+
+.integrantes a {
+    color: #ffffff;
+    text-decoration: none;
+    transition-duration: 1s;
+}
+
+.integrantes a:hover {
+    background-color: #000000;
+    box-shadow: 0px 0px 5px white;
+    border-radius: 5px;
+}
+
+.insta {
+    height: 17px;
+    width: 17px;
+}
