@@ -12,6 +12,22 @@ jobs:
       - name: Clonar o repositório
         uses: actions/checkout@v4
 
+      - name: Verificar se os arquivos essenciais do site existem
+        run: |
+          echo "Verificando se os arquivos do site estão presentes..."
+          
+          # Lista de arquivos obrigatórios baseada na sua pasta public
+          ARQUIVOS="public/index.html public/info.html public/integrantes.html public/css/style.css"
+          
+          for arquivo in $ARQUIVOS; do
+            if [ ! -f "$arquivo" ]; then
+              echo "ERRO CRÍTICO: O arquivo obrigatório '$arquivo' não foi encontrado!"
+              exit 1
+            else
+              echo "OK: $arquivo encontrado com sucesso."
+            fi
+          done
+
       - name: Configurar Docker Buildx
         uses: docker/setup-buildx-action@v3
 
@@ -21,7 +37,7 @@ jobs:
           context: .
           push: false   # Apenas cria a imagem para teste
           load: true    # Carrega a imagem no ambiente do runner
-          tags: mosqueteiros-site:latest  # <-- Ajustado para bater com o nome abaixo
+          tags: mosqueteiros-site:latest
 
       - name: Testar se o container sobe e responde
         run: |
