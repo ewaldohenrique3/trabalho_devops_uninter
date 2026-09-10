@@ -1,0 +1,121 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caramel&display=swap');
+
+:root {
+    --cor01: #131313;
+    --cor02: #252525;
+    --cor03: #000000;
+    --corfonte: #ffffff;    
+}
+
+body {
+    background-image: url('imagens/fundo03.png');
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+header {
+    font-family: "Bonheur Royale", cursive;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 3em;
+    background-image: linear-gradient(to bottom, var(--cor01), var(--cor02));
+    color: var(--corfonte);
+    margin: -21px 0px 10px 0px;
+    padding: 5px 0px;
+    box-shadow: 0px 0px 10px rgba(121, 120, 120, 0.363);
+    border-radius: 10px; 
+}
+
+/* Estilização da tabela de integrantes */
+table {
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.575);
+    padding: 10px;
+    margin: 50px auto;
+    border-radius: 20px;
+    text-align: left;
+    width: 90%;
+    height: 320px;
+    background-color: #2525257c;
+    color: white;
+}
+
+.titulotabela {
+    text-align: center;
+}
+
+tr th {
+    margin: 5px;
+    border: 1px;
+    padding: 10px;
+    border-radius: 10px;
+    transition-duration: .8s;
+}
+
+tr td {
+    padding: 10px;
+    border: 1px;
+    border-radius: 10px;
+    transition-duration: .8s;
+}
+
+tr {
+    transition-duration: .8s;
+}
+
+tr:hover {
+    border-radius: 10px;
+    border: 1px solid white;
+    background-color: black;
+}
+
+tr td:hover {
+    border-radius: 10px;
+    border: 1px solid white;
+    background-color: black;
+}
+
+/* Estilização da imagem e botão de retorno */
+.img {
+    text-align: center;
+    margin: 40px;
+}
+
+img {
+    transition: transform 1s ease;
+}
+
+img:hover {
+    transform: scale(1.5);
+}
+
+.retorno {
+    position: relative;
+    bottom: 15px;
+    left: 20px;
+    text-align: left;
+    font-size: 1.3em;
+    font-family: "Bonheur Royale", cursive;
+    color: white;
+    margin: 70px 20px 10px 20px;
+    padding: 1px;
+    border-radius: 10px;
+    background-color: #2525257c;
+    box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.582);
+    transition-duration: .3s;
+    width: 160px;
+    height: 60px;
+}
+
+.retorno a {
+    text-decoration: none;
+    color: white;
+    font-weight: lighter;
+    font-family: "Bonheur Royale", cursive;
+}
+
+.retorno:hover {
+    background-color: black;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.753);
+}
