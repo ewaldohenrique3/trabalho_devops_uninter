@@ -11,7 +11,7 @@
 }
 
 body {
-    background-image: url('imagens/fundo03.png');
+    background-image: url('/public/images/fundo03.png');
     background-attachment: fixed;
     background-size: cover;
 }
