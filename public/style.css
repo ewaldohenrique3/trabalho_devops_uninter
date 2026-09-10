@@ -1,0 +1,29 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caramel&display=swap');
+
+:root {
+    --cor01: #131313;
+    --cor02: #252525;
+    --cor03: #000000;
+    --corfonte: #ffffff;    
+}
+
+body {
+    background-image: url('imagens/fundo03.png');
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+header {
+    font-family: "Bonheur Royale", cursive;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 3em;
+    background-image: linear-gradient(to bottom, var(--cor01), var(--cor02));
+    color: var(--corfonte);
+    margin: -21px 0px 10px 0px;
+    padding: 5px 0px;
+    box-shadow: 0px 0px 10px rgba(121, 120, 120, 0.363);
+    border-radius: 10px; 
+}
