@@ -27,16 +27,14 @@ As seguintes ferramentas e tecnologias foram empregadas no desenvolvimento do pr
 * **GitHub Actions:** Motor de automação para a pipeline de CI/CD.
 
 ## Estrutura de Pastas
+
 trabalho_devops_uninter/
-│
 ├── .github/
 │   └── workflows/
 │       └── pipeline.yml
-│
 ├── public/
 │   ├── css/
 │   │   └── style.css
-│   │
 │   └── images/
 │       ├── aramis.png
 │       ├── athos.png
@@ -56,7 +54,6 @@ trabalho_devops_uninter/
 │       ├── mosq01.png
 │       ├── mosq02.png
 │       └── porthos.png
-│
 ├── index.html
 ├── info.html
 ├── integrantes.html
