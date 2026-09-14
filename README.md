@@ -28,6 +28,7 @@ As seguintes ferramentas e tecnologias foram empregadas no desenvolvimento do pr
 
 ## Estrutura de Pastas
 
+```text
 trabalho_devops_uninter/
 ├── .github/
 │   └── workflows/
